@@ -8,9 +8,9 @@ Deskripsi   : Tugas Praktikum Kriptografi (Hill Cipher Enkripsi, Dekripsi, dan M
 #include<bits/stdc++.h>
 using namespace std ;
  
-int key[3][3] ; // Sesbagai kunci global batas ordo matriks
+int key[3][3] ; // Sebagai kunci global batas ordo matriks
  
-int mod26(int x) //fungsi untuk modulo
+int mod26(int x) // fungsi untuk modulo
 {
     return x >= 0 ? (x%26) : 26-(abs(x)%26) ; 
 }
@@ -26,8 +26,9 @@ int cariDet(int m[3][3] , int n)
     else det = 0 ; // invalid input
     return mod26(det);
 }
- 
-int cariDetInverse(int R , int D = 26) // Mencari invers matriks
+
+// Mencari invers matriks
+int cariDetInverse(int R , int D = 26) 
  
 // R adalah sisa atau determinan
 {
